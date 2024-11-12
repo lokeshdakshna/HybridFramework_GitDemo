@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T08:17:37 IST" name="Suite" finished-at="2024-02-29T08:18:13 IST" duration-ms="36435">
+  <suite started-at="2024-11-12T08:32:46 IST" name="Default suite" finished-at="2024-11-12T08:33:03 IST" duration-ms="17638">
     <groups>
     </groups>
-    <test started-at="2024-02-29T08:17:37 IST" name="Test" finished-at="2024-02-29T08:18:13 IST" duration-ms="36435">
+    <test started-at="2024-11-12T08:32:46 IST" name="Default test" finished-at="2024-11-12T08:33:03 IST" duration-ms="17638">
       <class name="com.ots.testcases.LoginToApplication">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ots.testcases.LoginToApplication@1b955cac]" started-at="2024-02-29T08:17:37 IST" name="setup" finished-at="2024-02-29T08:17:43 IST" duration-ms="6499" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ots.testcases.LoginToApplication@273444fe]" started-at="2024-11-12T08:32:46 IST" name="setup" finished-at="2024-11-12T08:32:47 IST" duration-ms="1690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginApp(java.lang.String,java.lang.String)[pri:1, instance:com.ots.testcases.LoginToApplication@1b955cac]" started-at="2024-02-29T08:17:44 IST" name="loginApp" data-provider="LoginCredentials" finished-at="2024-02-29T08:17:54 IST" duration-ms="10064" status="FAIL">
+        <test-method signature="loginApp(java.lang.String,java.lang.String)[pri:1, instance:com.ots.testcases.LoginToApplication@273444fe]" started-at="2024-11-12T08:32:48 IST" name="loginApp" data-provider="LoginCredentials" finished-at="2024-11-12T08:32:51 IST" duration-ms="2883" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,72 +24,20 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //input[@placeholder='Enter Email1'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: /var/folders/z1/vylkdf412wj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55059}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55059/devtoo..., se:cdpVersion: 122.0.6261.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f94358646cf8758edb62033ada0d7c0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@placeholder='Enter Email1'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: /var/folders/z1/vylkdf412wj...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55059}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55059/devtoo..., se:cdpVersion: 122.0.6261.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f94358646cf8758edb62033ada0d7c0
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.ots.helper.Utility.getElement(Utility.java:31)
-at com.ots.pages.LoginPage.loginToApplicationAsAdminUser(LoginPage.java:34)
-at com.ots.testcases.LoginToApplication.loginApp(LoginToApplication.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ots.testcases.LoginToApplication@1b955cac]" started-at="2024-02-29T08:17:54 IST" name="tearDown" finished-at="2024-02-29T08:17:54 IST" duration-ms="100" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ots.testcases.LoginToApplication@273444fe]" started-at="2024-11-12T08:32:51 IST" name="tearDown" finished-at="2024-11-12T08:32:51 IST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ots.testcases.LoginToApplication -->
       <class name="com.ots.testcases.RegisterNewUser">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ots.testcases.RegisterNewUser@3a4621bd]" started-at="2024-02-29T08:17:54 IST" name="setup" finished-at="2024-02-29T08:18:00 IST" duration-ms="5387" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ots.testcases.RegisterNewUser@402c4085]" started-at="2024-11-12T08:32:51 IST" name="setup" finished-at="2024-11-12T08:32:52 IST" duration-ms="1205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ots.testcases.RegisterNewUser@3a4621bd]" started-at="2024-02-29T08:18:00 IST" name="createNewUser" data-provider="NewUsersInfo" finished-at="2024-02-29T08:18:13 IST" duration-ms="13309" status="PASS">
+        <test-method signature="createNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.ots.testcases.RegisterNewUser@402c4085]" started-at="2024-11-12T08:32:52 IST" name="createNewUser" data-provider="NewUsersInfo" finished-at="2024-11-12T08:33:03 IST" duration-ms="10855" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -127,14 +75,64 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //label[normalize-space()='Java']//preceding::input[1] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\lokes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57854}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57854/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53640d3dc4efbbaa8eb1cb5a7d0d02c9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //label[normalize-space()='Java']//preceding::input[1] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\lokes\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57854}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57854/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53640d3dc4efbbaa8eb1cb5a7d0d02c9
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.ots.helper.Utility.getElement(Utility.java:31)
+at com.ots.pages.SignupPage.createNewUser(SignupPage.java:41)
+at com.ots.testcases.RegisterNewUser.createNewUser(RegisterNewUser.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ots.testcases.RegisterNewUser@3a4621bd]" started-at="2024-02-29T08:18:13 IST" name="tearDown" finished-at="2024-02-29T08:18:13 IST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ots.testcases.RegisterNewUser@402c4085]" started-at="2024-11-12T08:33:03 IST" name="tearDown" finished-at="2024-11-12T08:33:03 IST" duration-ms="275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ots.testcases.RegisterNewUser -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
